@@ -4,9 +4,9 @@
 
 	1. CourseController
 		- @RequestMapping을 사용하여 mapping에 해당하는 url 접근시 실행되는 메서드들이 있음.
-		  메서드들에게 request가 올때 post, get 모두 Binding 되어 Course 객체로 값이 전달된다. 
-          Course 값에 대해 Buffer기능과 필요에 따라 Valid 기능을 사용하고 Model에 설정한 regexp값에
-          따라 View를 다르게 보여주기도 한다. 각 메서드들은 model 객체를 가지고 있으며 addattribute를 
+		  메서드들에게 request가 올때 post, get 모두 받을 수 있으며 전달된 값이 Binding 되어 Course 객체로 값이 전달된다. 
+          Course 값에 대해 Buffer 기능과 필요에 따라 Valid 기능을 사용하고 Model에 설정한 regexp값에
+          따라 View에서 error 값을 보여준다. 각 메서드들은 model 객체를 가지고 있으며 addattribute를 
           통해 객체를 View로 전달할 수 있다.
 
     2. HomeController
